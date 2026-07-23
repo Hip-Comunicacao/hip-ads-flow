@@ -4,7 +4,7 @@ import {createClient} from '@supabase/supabase-js'
 import {LayoutDashboard,KanbanSquare,List,Plus,LogOut,Search,Printer,Trash2,X,ChevronRight,RefreshCw,Users,Bell,Check,MessageSquare,Paperclip,Upload,Download,History,Filter,Copy,ClipboardList,CheckCircle2,PauseCircle} from 'lucide-react'
 import './styles.css'
 
-const supabase=createClient(import.meta.env.VITE_SUPABASE_URL,import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY)
+const supabase=createClient(import.meta.env.VITE_SUPABASE_URL,import.meta.env.VITE_SUPABASE_ANON_KEY)
 const STATUSES=['Pendente','Em andamento','Alteração pendente','Publicada','Finalizada','Cancelada']
 const OBJECTIVES_BY_PLATFORM={
  'Meta Ads':['Reconhecimento','Alcance','Tráfego','Engajamento','Leads','Promoção do app','Vendas','Remarketing'],
